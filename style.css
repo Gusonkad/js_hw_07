@@ -1,0 +1,40 @@
+.container {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   border: 4px solid rgb(55, 23, 68);
+   max-width: 1440px;
+   min-width: 320px;
+   min-height: 600px;
+   justify-content: center;
+   margin: auto;
+}
+.task {
+   flex-direction: column;
+   max-width: 1400px;
+   max-height: 100%;
+   background: rgb(209, 221, 195);
+   margin: 10px;
+   padding: 20px;
+   font-size: 30px;
+   text-align: justify;
+   color: rgb(36, 14, 77);
+}
+
+.task ul {
+   color: rgb(5, 5, 5);
+   font-size: 20px;
+   justify-content: center;
+   padding-left: 50px;
+   padding-right: 50px;
+   max-width: 650px;
+   max-height: auto;
+}
+.task h1 {
+   color: rgb(5, 5, 5);
+   justify-content: center;
+   padding-left: 50px;
+   padding-right: 50px;
+   max-width: 650px;
+   max-height: auto;
+}
