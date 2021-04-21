@@ -14,11 +14,11 @@ const ingredients = [
    'Приправы',
 ];
 let ulList = document.getElementById("ingredients");
-const foodIngredients = ingredients.forEach(ingredient => {
-  let items = document.createElement("li");
-  items.innerHTML = ingredient;
-  ulList.append(items);
-  parent.append(...items)
+const allIngredients = ingredients.forEach(ingredient => {
+  let li = document.createElement("li");
+  li.innerHTML = ingredient;
+  ulList.append(li);
+  parent.append(...li);
 });
 
-console.log(foodIngredients);
+console.log(allIngredients);
