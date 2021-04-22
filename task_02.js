@@ -6,19 +6,19 @@
 // // Для создания DOM-узлов используй document.createElement().
 
 const ingredients = [
-   'Картошка',
-   'Грибы',
-   'Чеснок',
-   'Помидоры',
-   'Зелень',
-   'Приправы',
+  'Картошка',
+  'Грибы',
+  'Чеснок',
+  'Помидоры',
+  'Зелень',
+  'Приправы',
 ];
-let ulList = document.getElementById("ingredients");
-const allIngredients = ingredients.forEach(ingredient => {
-  let li = document.createElement("li");
+const ulList = document.getElementById('ingredients');
+const allIngredients = ingredients.map(ingredient => {
+  let li = document.createElement('li');
   li.innerHTML = ingredient;
   ulList.append(li);
-  parent.append(...li);
-});
+  return ingredient;
+}, []);
 
 console.log(allIngredients);
